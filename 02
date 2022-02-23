@@ -6,15 +6,15 @@ int program(string s) {
     int counter1 = 0;
     int counter2 = 0;
     while (s != "" ){
-        cin >> s;
         a = stoi(s);
-        if (a >= 0){
+        if (a > 0){
             counter1++;
             counter2++;
         }
         else {
             counter2++;
         }
+        cin >> s;
     }
     if ( counter1 == counter2){
         cout << "Vse pologutelnye" << endl;
@@ -30,3 +30,27 @@ int main() {
     program(k);
     return 0;
 }
+
+/*Блок-схема
+            (НАЧАЛО)
+               |
+             / s /
+               |
+       |    int a = 0      |
+       |  int counter1 = 0 |
+       | int counter2 = 0  |
+               |
+           _   |
+--------- /  s == ""  |  --------------------
+|              |                             |
+|             (+)                           (-)
+|              |                             |
+|     |    a = stoi(s)    |        <counter1 == counter2>
+|              |                        |            |
+|     (+)- < a > 0 > --(-)             (+)          (-)
+|      |                |               |            |
+| | counter1++ |   | counter2++ |   / Vse polog/  / Est otr /
+| | counter2++ |         |              |            |
+|       |                |              (    КОНЕЦ   )
+--------/       s        /
+                                              
