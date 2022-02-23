@@ -5,9 +5,9 @@ int program(string s) {
     int a = 0;
     int counter1 = 0;
     int counter2 = 0;
-    while (s != "" ){
+    while (s != "" ) {
         a = stoi(s);
-        if (a > 0){
+        if (a > 0) {
             counter1++;
             counter2++;
         }
@@ -16,10 +16,10 @@ int program(string s) {
         }
         cin >> s;
     }
-    if ( counter1 == counter2){
+    if ( counter1 == counter2) {
         cout << "Vse pologutelnye" << endl;
     }
-    else{
+    else {
         cout << "Est otrucatelnye" << endl;    
     }
     return 0;
