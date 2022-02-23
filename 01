@@ -2,7 +2,7 @@
 using namespace std;
 void perevernut(int a) {
     int obr = 0;
-    while (a > 0){
+    while (a > 0) {
         obr = a % 10 + obr * 10;
         a = a / 10;
     }
