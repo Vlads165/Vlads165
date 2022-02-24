@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main() {
+int program() {
     float a;
     cout << "Vedite a"<< endl;
     cin >> a;
@@ -15,4 +15,7 @@ int main() {
         cout << "Chiclo otrizatelnoe"<< endl;}
     }
       return 0;
+}
+int main() {
+    program();
 }
