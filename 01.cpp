@@ -12,7 +12,7 @@ int main() {
     else {
         if (b * b - 4 * a * c == 0) {
           cout << "x=" << (-b / (2 * a)) << endl;
-          } 
+        } 
         else {
           cout << "Resheniy net" << endl;
         }
