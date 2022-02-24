@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int program(string s) {
+int program() {
+    string s;
     int a = 0;
     int counter1 = 0;
     int counter2 = 0;
+    cin >> s;
     while (s != "" ) {
         a = stoi(s);
         if (a > 0) {
@@ -25,32 +27,8 @@ int program(string s) {
     return 0;
 }
 int main() {
-    string k;
-    cin >> k;
-    program(k);
+    program();
     return 0;
 }
 
-#Блок-схема
-            (НАЧАЛО)
-               |
-             / s /
-               |
-       |    int a = 0      |
-       |  int counter1 = 0 |
-       | int counter2 = 0  |
-               |
-           _   |
---------- /  s == ""  |  --------------------
-|              |                             |
-|             (+)                           (-)
-|              |                             |
-|     |    a = stoi(s)    |        <counter1 == counter2>
-|              |                        |            |
-|     (+)- < a > 0 > --(-)             (+)          (-)
-|      |                |               |            |
-| | counter1++ |   | counter2++ |   / Vse polog/  / Est otr /
-| | counter2++ |         |              |            |
-|       |                |              (    КОНЕЦ   )
---------/       s        /
                                               
