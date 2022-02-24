@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-int main() {
+int kvyrav() {
     float a,b,c;
     cout << "Vedite koef a,b,c" << endl;
     cin >> a >> b >> c;
@@ -19,3 +19,7 @@ int main() {
     }
     return 0;
 }
+int main() {
+    kvyrav();
+    return 0;
+}    
