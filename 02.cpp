@@ -8,7 +8,7 @@ int main () {     //функция для посчета суммы положи
     for (int i=0; i<n; i++)
         for(int j=0; j<m; j++)
           cin>>array[i][j];
-for (int i=0; i<n; i++)
+    for (int i=0; i<n; i++)
         for(int j=0; j<m; j++)
             if (array[i][j] > 0)
               sum += array[i][j];
