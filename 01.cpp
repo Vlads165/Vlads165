@@ -19,9 +19,9 @@ int main() {
   cin >> n;
   int array[n];
   for (int i = 0; i < n; i++)
-  cin >> array[i];
+    cin >> array[i];
   max_min(array,n);
   for (int i = 0; i < n; i++)
-  cout << array[i] << endl;
+    cout << array[i] << endl;
   return 0;
 }
