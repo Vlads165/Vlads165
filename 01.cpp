@@ -38,7 +38,6 @@ int main()
     cin >> m; 
     int **a = new int* [n];
     int **b = new int* [n];
-    int **c = new int* [n];
     for (int i=0; i < n; i++){
         a[i] = new int[m];
         b[i] = new int[m];
